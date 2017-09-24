@@ -1,5 +1,9 @@
 package com.mx.gnp.services.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+@JsonInclude(Include.NON_NULL)
 public class Location extends ModelBean {
 
 	/**
@@ -13,6 +17,7 @@ public class Location extends ModelBean {
 	private String msg;
 	private String nameUser;
 	private String date;
+	
 	public String getNumTelefono() {
 		return numTelefono;
 	}
